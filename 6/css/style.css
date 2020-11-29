@@ -1,0 +1,524 @@
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff") format("woff"), url("../fonts/opensans.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url("../fonts/opensansbold.woff") format("woff"), url("../fonts/opensansbold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans Light";
+  src: url("../fonts/opensanslight.woff") format("woff"), url("../fonts/opensanslight.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+.add__wrapper {
+  min-height: 395px;
+  padding-top: 20px;
+  background-image: url("../../img/screen.jpg"), url("../../img/phone.png"), url("../../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center 141px, center bottom, center;
+  background-size: 111px 197px, 320px 286px, cover;
+}
+.add__text {
+  font-family: "Open Sans Light", "Arial", serif;
+  font-size: 24px;
+  color: #ffffff;
+  width: 280px;
+  margin: 0 auto 0;
+  text-align: center;
+}
+.add__access {
+  background-color: #283645;
+  min-height: 320px;
+  padding: 40px 20px 0;
+  text-align: center;
+}
+.add__download {
+  width: 280px;
+  height: 55px;
+  background-color: #283645;
+  font-family: "Open Sans Bold", "Arial", serif;
+  font-size: 18px;
+  color: #ffffff;
+  border-radius: 30px;
+  border: 3px solid #ffffff;
+}
+.add__icons {
+  margin: auto;
+  padding: 30px 0 0;
+  height: 77px;
+  width: 204px;
+  background-image: url("../../img/apple-logo.svg"), url("../../img/android-logo.svg"), url("../../img/microsoft-logo.svg");
+  background-repeat: no-repeat;
+  background-position: left bottom, center bottom, right bottom;
+}
+.add__available {
+  font-family: "Open Sans Light", "Arial", serif;
+  font-size: 14px;
+  color: #ffffff;
+  width: 280px;
+  margin: 30px auto 0;
+}
+.copyright__text {
+  font-family: "Open Sans", "Arial", serif;
+  color: #283645;
+  font-size: 14px;
+}
+.footer {
+  text-align: center;
+}
+.footer__logo-wrapper {
+  width: 145px;
+  height: 40px;
+}
+.general__text-wrapper {
+  min-height: 320px;
+  padding: 46px 0 0;
+  text-align: center;
+}
+.general__text {
+  font-family: "Open Sans Light", "Arial", serif;
+  color: #000000;
+  font-size: 24px;
+  margin: 0 auto 40px auto;
+  width: 280px;
+}
+.general__list-wrapper {
+  background-color: #f2f2f2;
+  min-height: 800px;
+  padding: 60px 20px 0;
+  text-align: center;
+  background-image: url("../../img/iphone screen-3.jpg"), url("../../img/iphone 3.png");
+  background-repeat: no-repeat;
+  background-position: center bottom, center 513px;
+}
+.general__list {
+  margin: 0 auto 0 auto;
+  padding: 0;
+  list-style: none;
+  width: 280px;
+}
+.general__list-item-title {
+  font-family: "Open Sans Bold", "Arial", serif;
+  font-size: 18px;
+}
+.general__list-item-text {
+  font-family: "Open Sans", "Arial", serif;
+  font-size: 14px;
+}
+.info__questions {
+  font-family: "Open Sans Light", "Arial", serif;
+  font-size: 24px;
+  text-align: center;
+}
+.info__list {
+  margin: 0 auto 0 auto;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  width: 241px;
+}
+.info__list-item-title {
+  font-family: "Open Sans Bold", "Arial", serif;
+  font-size: 18px;
+}
+.info__list-item-text {
+  font-family: "Open Sans Light", "Arial", serif;
+  color: #D22856;
+  font-size: 24px;
+}
+.map {
+  width: 100%;
+  height: 200px;
+  background-image: url("../../img/map.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.page-header {
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  background-color: #283645;
+  color: #ffffff;
+  padding: 23px 0 0;
+}
+.page-header__logo-wrapper {
+  margin-left: 20px;
+}
+body {
+  margin: 0;
+}
+.rates {
+  position: relative;
+  text-align: center;
+  min-height: 280px;
+  background-color: #e5e5e5;
+}
+.rates__table-row-subscription {
+  background-color: #283645;
+  color: #ffffff;
+  font-family: "Open Sans Bold", "Arial", serif;
+  text-transform: uppercase;
+}
+.rates__table {
+  margin: 0 auto 0 auto;
+  padding: 0;
+  max-width: 100%;
+  border-spacing: 0;
+}
+.rates__table-money {
+  font-family: "Open Sans Light", "Arial", serif;
+  font-size: 18px;
+}
+.rates__first-column {
+  background-color: #ffffff;
+  font-family: "Open Sans Light", "Arial", serif;
+  font-size: 14px;
+}
+.rates__table-subscription-cell,
+.rates__table-filter-cell,
+.rates__table-smiles-cell,
+.rates__table-coments-cell {
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+}
+thead .rates__table-subscription-cell,
+thead .rates__table-filter-cell,
+thead .rates__table-smiles-cell,
+thead .rates__table-coments-cell {
+  background-color: #283645;
+}
+.rates__table-row-subscription .rates__table-subscription-cell.rates__first-column {
+  background-color: #e5e5e5;
+}
+.reviews__wrapper {
+  min-height: 320px;
+  padding: 20px 0 0 0;
+  position: relative;
+}
+.reviews__list {
+  position: relative;
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0 auto 0 auto;
+  width: 280px;
+}
+.reviews__list-item {
+  position: absolute;
+  background-color: #ffffff;
+}
+.reviews__name {
+  font-family: "Open Sans Bold", "Arial", serif;
+  font-size: 18px;
+}
+.reviews__text {
+  font-family: "Open Sans", "Arial", serif;
+  font-size: 14px;
+  line-height: 30px;
+}
+.social {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.social__link {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border: 3px solid #e5e5e5;
+  border-radius: 50%;
+  padding: 12px 0 0 0;
+}
+.site-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.site-list__item {
+  text-align: center;
+}
+.site-list__link {
+  display: inline-block;
+  height: 63px;
+  width: 100%;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 1px solid #000000;
+  border-top: 1px solid #485461;
+}
+.site-list__link-text {
+  display: inline-block;
+  margin-top: 21px;
+  font-size: 18px;
+}
+.switcher {
+  position: absolute;
+}
+.switcher--reviews {
+  bottom: 20px;
+  left: 50%;
+  margin: 0 0 0 -22px;
+}
+.switcher--table {
+  bottom: 20px;
+  left: 50%;
+  margin: 0 0 0 -22px;
+}
+.switcher__toggle {
+  position: relative;
+  border: none;
+  background-color: transparent;
+  height: 16px;
+  width: 16px;
+}
+.switcher__toggle::before {
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  content: "";
+  display: inline-block;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background-color: #bfc3c8;
+}
+.switcher__toggle--current::before {
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  content: "";
+  display: inline-block;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  border: 3px solid #283645;
+  background-color: #ffffff;
+}
+.form-contest {
+  min-height: 171px;
+  padding-top: 20px;
+  background-image: url("../../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.form-contest__text {
+  font-family: "Open Sans Light", "Arial", serif;
+  font-size: 24px;
+  color: #ffffff;
+  width: 280px;
+  margin: 0 auto 0;
+  text-align: center;
+}
+.form {
+  font-family: "Open Sans", "Arial", serif;
+}
+.form-text {
+  font-size: 14px;
+  text-align: center;
+  margin: 54px auto 50px;
+  width: 280px;
+}
+.form__name,
+.form__achievements,
+.form__contacts,
+.form__app,
+.form__emotion {
+  border: none;
+}
+.form__name-wrapper + .form__name-wrapper {
+  margin-top: 29px;
+}
+.form__name-label,
+.form-contacts-label {
+  display: inline-block;
+  font-size: 14px;
+  color: #D22856;
+  text-transform: uppercase;
+  margin: 0 0 17px 23px;
+}
+.form__name-input,
+.form__contacts-input {
+  width: 276px;
+  height: 59px;
+  border: 2px solid #e5e5e5;
+  font-size: 18px;
+  color: #283645;
+  padding-left: 22px;
+}
+.form__achievments-container,
+.form__app-container {
+  background-color: #f2f2f2;
+}
+.form__achievments-container {
+  min-height: 504px;
+  padding-top: 42px;
+}
+.form__achievements-wrapper {
+  margin-bottom: 47px;
+}
+.form__achievements-legend,
+.form__app-legend,
+.form__emotion-legend {
+  display: inline-block;
+  color: #D22856;
+  font-size: 14px;
+  text-align: center;
+  width: 256px;
+  margin: 0 auto 0;
+  text-transform: uppercase;
+}
+.form__achievements-label {
+  position: relative;
+  font-size: 18px;
+  cursor: pointer;
+  padding-left: 59px;
+}
+.form__achievements-label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #e5e5e5;
+  border-radius: 2px;
+  background-color: #ffffff;
+}
+.form__achievements-input:checked + .form__achievements-label::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 7px;
+  width: 22px;
+  height: 16px;
+  display: inline-block;
+  background-image: url("../img/tick.svg");
+  transition: 1s;
+}
+.form__contacts {
+  padding-top: 42px;
+}
+.form__contacts-wrapper {
+  margin-bottom: 30px;
+}
+.form__app {
+  background-color: #f2f2f2;
+}
+.form__app-wrapper {
+  margin-bottom: 47px;
+}
+.form__app-legend {
+  margin-bottom: 40px;
+}
+.form__app-label {
+  font-size: 18px;
+  position: relative;
+  padding-left: 70px;
+}
+.form__app-label::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 4px;
+  display: inline-block;
+  width: 37px;
+  height: 37px;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+}
+.form__app-input:checked + .form__app-label::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 18px;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: #D22856;
+  border-radius: 50%;
+}
+.form__emotion-text {
+  border: 2px solid #e5e5e5;
+  font-family: "Open Sans", "Arial", serif;
+  font-size: 18px;
+  color: #283645;
+  width: 276px;
+  min-height: 197px;
+  padding: 22px 20px;
+}
+.form__submit-button {
+  display: inline-block;
+  width: 276px;
+  height: 59px;
+  border: none;
+  border-radius: 2px;
+  background-color: #2AAB6D;
+  font-family: "Open Sans Bold", "Arial", serif;
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0 auto 0;
+}
+.form__star-symbol {
+  color: #D22856;
+}
+.form__reminder {
+  text-transform: uppercase;
+  text-align: center;
+}
+.modal {
+  font-family: "Open Sans", "Arial", serif;
+  width: 320px;
+  text-align: center;
+}
+.modal__title {
+  font-family: "Open Sans Bold", "Arial", serif;
+  font-size: 18px;
+}
+.modal__description {
+  font-size: 14px;
+}
+.modal__button {
+  width: 276px;
+  height: 59px;
+  background-color: #2AAB6D;
+  border: none;
+  font-family: "Open Sans Bold", "Arial", serif;
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.modal--failure {
+  height: 289px;
+}
+.modal--success {
+  height: 380px;
+}
+
+/*# sourceMappingURL=style.css.map */
