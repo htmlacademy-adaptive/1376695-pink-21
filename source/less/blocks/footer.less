@@ -31,9 +31,17 @@
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     padding: 59px 0 0 0;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 62px 0 0 0;
+  }
 }
 
 .footer--catalog {
+  @media (max-width: @mobile-width-only) {
+    width: 220px;
+  }
+
   @media (min-width: @desktop-width) {
     padding: 45px 0 0 0;
   }
@@ -53,6 +61,16 @@
     width: 172px;
     margin: 0 0 0 6px;
   }
+}
+
+.footer__logo-wrapper:hover path {
+  fill: @deepred;
+  transition: 0.2s;
+}
+
+.footer__logo-wrapper:active path {
+  opacity: 0.3;
+  transition: 0.2s;
 }
 
 .footer__social-list {
